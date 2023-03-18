@@ -1,6 +1,7 @@
 import Logo from '../static/logo.png';
 import Image from 'next/image';
 import { FiBookmark } from 'react-icons/fi';
+import Link from 'next/link';
 
 const styles = {
     wrapper:`flex max-w-[46rem] h-[10rem] items-center gap-[1rem] cursor-pointer`,
@@ -19,6 +20,7 @@ const styles = {
 
 const PostCard = () => {
   return (
+    <Link href={`/post/123`}>
     <div className={styles.wrapper}>
       <div className={styles.postDetails}>
        <div className={styles.authorContainer}>  
@@ -55,6 +57,7 @@ const PostCard = () => {
       />
     </div>
     </div>
+    </Link>
   )
 }
 
